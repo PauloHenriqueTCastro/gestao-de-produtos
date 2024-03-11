@@ -1,11 +1,17 @@
 package product;
 
 public class ProductModel {
-
     private String barCode;
     private String name;
     private int priceInCents;
     private int stock;
+
+    public ProductModel(String barCode, String name, int priceInCents, int stock) {
+        this.barCode = barCode;
+        this.name = name;
+        this.priceInCents = priceInCents;
+        this.stock = stock;
+    }
 
     public String getBarCode() {
         return barCode;
